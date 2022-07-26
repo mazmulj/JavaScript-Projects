@@ -21,10 +21,21 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
+    :root{
+      --base: #5c4f22;
+      --spacing: 10px;
+      --blur: 10px;
+    }
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+    img{
+      padding: var(--spacing);
+      filter: blur(var(--blur));
+      background: var(--base);
+    }
+    
+    .hl{
+      color: var(--base);
+    }
 
     body {
       text-align: center;
